@@ -1,0 +1,25 @@
+<h1>{{ name() }}</h1>
+
+<dl>
+  <dt>Nombre:</dt>
+  <dd>{{ name() }}</dd>
+
+  <dt>Edad:</dt>
+  <dd>{{ age() }}</dd>
+
+  <dt>Método:</dt>
+  <dd>{{ heroDescription() }}</dd>
+
+  <dt>Capitalizado:</dt>
+  <!-- ! Reto Extra: Mostrar el nombre TODO EN MAYÚSCULAS sin crear una nueva señal -->
+  <dd>{{ name() |uppercase}}</dd>
+  <dd>{{ capitalizedName()}}</dd>
+</dl>
+
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
