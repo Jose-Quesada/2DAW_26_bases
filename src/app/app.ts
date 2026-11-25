@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CounterPage } from './pages/counter/counter-page';
+import { Navbar } from './components/shared/navbar/navbar';
 
 @Component({
-  imports: [RouterOutlet, CounterPage],
+  imports: [RouterOutlet, CounterPage, Navbar],
   selector: 'nuevo-componente',
   styleUrl: './app.css',
   templateUrl: './app.html',
